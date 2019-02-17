@@ -8,7 +8,7 @@ cd $THIS_DIR
 
 echo "start setup..."
 for f in .??*; do
-	#[ ${f} = ".git"] && continue
+	[ "${f}" = ".git" ] && continue
 
 	ln -snfv $HOME/dotfile/${f} $HOME/${f}
 done
