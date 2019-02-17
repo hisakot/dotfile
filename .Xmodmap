@@ -1,0 +1,13 @@
+add lock = Caps_Lock
+remove lock = Caps_Lock
+
+! keysym Caps_Lock = Control_L
+keycode 66 = Control_L
+
+! keysym Henkan = Escape
+keycode 100 = Escape
+
+! keysym Hiragana_Katakana Romaji = Zenkaku_Hankaku Kanji
+keycode 101 = Zenkaku_Hankaku
+
+add control = Control_L

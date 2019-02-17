@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=xmodmap /home/hisako/.Xmodmap
+Hidden=false
+X-MATE-Autostart-enabled=true
+Name[ja_JP]=xmodmap
+Name=xmodmap
+Comment[ja_JP]=
+Comment=

@@ -1,0 +1,45 @@
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'            # 補完
+hook_add = '''
+    execute 'source ' . g:dein_config_dir . 'deoplete.vim'
+'''
+
+[[plugins]]
+repo = 'roxma/nvim-yarp'                 # neovim compatibility
+if = '!has("nvim")'
+
+[[plugins]]
+repo = 'roxma/vim-hug-neovim-rpc'        # neovim compatibility
+if = '!has("nvim")'
+
+[[plugins]]
+repo = 'Shougo/neosnippet'               # Snippet
+depends = ['deoplete.nvim']
+
+[[plugins]]
+repo = 'Shougo/neosnippet-snippets'      # Snippet
+depends = ['neosnippet']
+
+[[plugins]]
+repo = 'tyru/caw.vim'                    # コメントアウト補助
+hook_add = '''
+    execute 'source ' . g:dein_config_dir . 'caw.vim'
+'''
+
+[[plugins]]
+repo = 'scrooloose/nerdtree'             # Filer
+hook_add = '''
+    execute 'source ' . g:dein_config_dir . 'nerdtree.vim'
+'''
+
+[[plugins]]
+repo = 'itchyny/lightline.vim'           # ステータスライン
+hook_add = '''
+    execute 'source ' . g:dein_config_dir . 'lightline.vim'
+'''
+
+[[plugins]]
+repo = 'tpope/vim-sleuth'                # インデント自動検出
+
+[[plugins]]
+repo = 'ujihisa/neco-look'               # 英単語補完
