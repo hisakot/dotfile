@@ -1,7 +1,6 @@
-add lock = Caps_Lock
-remove lock = Caps_Lock
+remove lock = Eisu_toggle
 
-! keysym Caps_Lock = Control_L
+! keysym Eisu_toggle = Control_L
 keycode 66 = Control_L
 
 ! keysym Henkan = Escape
