@@ -17,10 +17,21 @@ set whichwrap=b,s,h,l,<,>,[,]
 autocmd BufWritePre * :%s/\s\+$//ge
 
 " one display readable
+" line number
 set number
+highlight LineNr ctermfg=lightred ctermbg=black
+
+" cursorline : other color:darkgrey => ColorColumn
 set cursorline
-" highlight clear CursorLine
+highlight CursorLine cterm=NONE ctermbg=black
+
+" brackets
 set showmatch
+set matchtime=1
+
+" highlight : number or string -> lightmagenta, escape sequence -> lightcyan
+highlight Constant ctermfg=lightmagenta
+highlight Special ctermfg=lightcyan
 
 " indent and tab
 set cindent
@@ -30,7 +41,7 @@ setlocal shiftwidth=4
 
 " set textwidth=80
 let &colorcolumn=join(range(81,999),",")
-highlight ColorColumn ctermbg=235 guibg=#2c2d27
+highlight ColorColumn ctermbg=black guibg=#2c2d27
 
 " status line
 set previewheight=1
@@ -57,4 +68,5 @@ set fileformats=unix,dos,mac
 
 inoremap <C-v> <ESC>"+gp
 vnoremap <C-c> "+y
+
 

@@ -1,5 +1,0 @@
-[[plugin]]
-repo = 'tyru/caw.vim'
-hook_add = '''
-   execute 'source ' . g:dein_config_dir . 'caw.vim'
-'''
