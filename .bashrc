@@ -135,3 +135,9 @@ export CUDA_CUDART_LIBRARY=$CUDA_HOME
 # tex
 alias latexmk='latexmk -pvc'
 
+# xmodmap
+xmodmap | grep "Eisu_toggle" | grep "lock" > /dev/null 2>&1
+if [ $? = 0 ]; then
+  xmodmap ~/.Xmodmap
+fi
+
