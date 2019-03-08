@@ -19,7 +19,7 @@ autocmd BufWritePre * :%s/\s\+$//ge
 " one display readable
 " line number
 set number
-highlight LineNr ctermfg=lightred ctermbg=black
+highlight LineNr ctermfg=grey
 
 " cursorline : other color:darkgrey => ColorColumn
 set cursorline
