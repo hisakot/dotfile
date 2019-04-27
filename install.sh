@@ -1,22 +1,28 @@
 #!/bin/bash
 
-set -u
+packagelist=(
+	"evince"
+	"htop"
+	"python3"
+	"texlive-full"
+)
+piplist=(
+	"matplotlib"
+	"neovim"
+	"numpy"
+	"rainbow_logging_handler"
+	"scipy"
+)
 
-THIS_DIR=$(cd $(dirname $0); pwd)
-
-cd $THIS_DIR
-
-echo "start setup..."
-for f in .??*; do
-	[ "${f}" = ".git" ] && continue
-
-	ln -snfv $HOME/dotfile/${f} $HOME/${f}
+echo "start apt-get install"
+for package in ${packagelist[@]}; do
+	sudo apt-get install ${list}
 done
 
-cat << END
+echo "start sudo pip3 install"
+for list in ${piplist[@]}; do
+	sudo pip3 install ${list}
+done
 
-************************
-DOTFILE SETUP FINISHED.
-************************
-
-END
+sudo apt-get update
+sudo apt-get upgrade
