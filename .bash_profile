@@ -13,10 +13,10 @@ fi
 # if [ -f "$HOME/.Xmodmap" ]; then
 #     xmodmap $HOME/.Xmodmap
 # fi
-xmodmap | grep "Eisu_toggle" | grep "lock" > /dev/null 2>&1
-if [ $? = 0 ]; then
-    xmodmap $HOME/.Xmodmap
-fi
+# xmodmap | grep "Eisu_toggle" | grep "lock" > /dev/null 2>&1
+# if [ $? = 0 ]; then
+#     xmodmap $HOME/.Xmodmap
+# fi
 
 # set PATH so it includes user's private bin directories
 PATH="$HOME/bin:$HOME/.local/bin:$PATH"
