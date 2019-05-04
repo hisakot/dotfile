@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Exec=/usr/bin/mate-terminal --geometry=104x60+960+0
+X-MATE-Autostart-enabled=true
+Encoding=UTF-8
+Name[ja_JP]=mate-terminal
+Name=mate-terminal
