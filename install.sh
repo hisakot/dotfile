@@ -5,6 +5,7 @@ packagelist=(
 	"htop"
 	"python3"
 	"texlive-full"
+	"jpegoptim"
 )
 piplist=(
 	"matplotlib"
