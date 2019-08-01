@@ -2,6 +2,7 @@
 \usepackage[dvipdfmx]{graphicx}
 \usepackage[labelsep=period]{caption}
 \usepackage{listings, jlisting}
+\usepackage{here}
 
 \lstset {
 	language={C++},
@@ -26,9 +27,6 @@
 \begin{document}
 \maketitle
 
-\section{}
-\subsection{}
-
 \begin{itemize}
 	\item 事柄
 \end{itemize}
@@ -37,7 +35,6 @@
 	// コード
 \end{lstlisting}
 
-\subsection{4}
 \begin{eqnarray}
 	数式
 \end{eqnarray}
@@ -45,6 +42,36 @@
 \begin{description}
 	\item[項目] 事柄
 \end{description}
+
+\begin{figure}[htbp]
+	\begin{minipage}[t]{0.5\hsize}
+		\begin{center}
+			\caption{}
+			\label{}
+			\begin{tabular}{ccc}
+				\hline
+				a & \multicolumn{2}{c}{b} \\ % {joined cell number}{location}{value}
+				c & d & e \\
+				\hline
+			\end{tabular}
+		\end{center}
+	\end{minipage}
+	\begin{minipage}[t]{0.5\hsize}
+		\begin{center}
+			\caption{}
+			\label{}
+			\begin{tabular}{ccc}
+				\hline
+				a & \multicolumn{2}{c}{b} \\ % {joined cell number}{location}{value}
+				c & d & e \\
+				\hline
+			\end{tabular}
+% 			\includegraphics[scale=0.5]{./}
+% 			\caption{}
+% 			\label{}
+		\end{center}
+	\end{minipage}
+\end{figure}
 
 \begin{thebibliography}{9}
 	\bibitem{label}
