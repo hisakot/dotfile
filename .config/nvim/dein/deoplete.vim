@@ -12,8 +12,10 @@ let g:deoplete#file#enable_buffer_path = 1
 let g:deoplete#max_list = 500
 
 " Enterで補完を決定、または次へジャンプ
-imap <expr><CR> pumvisible() ? "\<Plug>(neosnippet_expand)" :
-              \ (neosnippet#jumpable() ? "\<Plug>(neosnippet_jump)" :"\<CR>")
+" imap <expr><CR> neosnippet#jumpable() ? "\<Plug>(neosnippet_jump)" :
+"             \ (pumvisible() ? "\<Plug>(neosnippet_expand)" :"\<CR>")
+imap <expr><CR> neosnippet#expandable() ? "\<Plug>(neosnippet_expand_or_jump)" :
+            \ (pumvisible() ? "\<C-y>" :"\<CR>")
 " Ctrl+Enterで次へジャンプ
 imap <expr><C-CR> neosnippet#jumpable() ? "\<Plug>(neosnippet_jump)" : "\<CR>"
 " Tabで選択
