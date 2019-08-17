@@ -43,3 +43,6 @@ repo = 'tpope/vim-sleuth'                # インデント自動検出
 
 [[plugins]]
 repo = 'ujihisa/neco-look'               # 英単語補完
+
+[[plugins]]
+repo = 'Yggdroot/indentLine'             # indent line
