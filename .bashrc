@@ -141,3 +141,5 @@ if [ $? = 0 ]; then
   xmodmap ~/.Xmodmap
 fi
 
+# chrome driver
+export PATH=${PATH}:/home/hisako/Downloads
