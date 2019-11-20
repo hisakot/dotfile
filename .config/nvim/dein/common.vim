@@ -14,7 +14,7 @@ set backspace=indent,eol,start
 set whichwrap=b,s,h,l,<,>,[,]
 
 " delete end of line space when :w
-autocmd BufWritePre * :%s/\s\+$//ge
+" autocmd BufWritePre * :%s/\s\+$//ge
 
 " one display readable
 " line number
