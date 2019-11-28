@@ -133,7 +133,7 @@ export CUDA_PATH=$CUDA_HOME
 export CUDA_CUDART_LIBRARY=$CUDA_HOME
 
 # tex
-alias latexmk='latexmk -pvc && rm -i *.[!tp]*'
+alias latexmk='latexmk -pvc && rm -i *\.[^pt]*'
 
 # xmodmap
 xmodmap | grep "Eisu_toggle" | grep "lock" > /dev/null 2>&1
@@ -143,3 +143,7 @@ fi
 
 # chrome driver
 export PATH=${PATH}:/home/hisako/Downloads
+
+# android-studio
+export PATH=${PATH}:/usr/local/android-studio/bin
+
