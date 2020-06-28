@@ -3,6 +3,9 @@ remove lock = Eisu_toggle
 ! keysym Eisu_toggle = Control_L
 keycode 66 = Control_L
 
+! keysym Muhenkan = Control_L
+keycode 102 = Control_L
+
 ! keysym Henkan = Escape
 keycode 100 = Escape
 
