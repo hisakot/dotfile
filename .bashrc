@@ -125,6 +125,8 @@ if [ -x /usr/bin/mint-fortune ]; then
 fi
 alias vim=nvim
 
+XDG_CONFIG_HOME=/home/hisakot/.config/nvim/init.vim
+
 # cuda
 export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
@@ -142,7 +144,7 @@ if [ $? = 0 ]; then
 fi
 
 # chrome driver
-export PATH=${PATH}:/home/hisako/Downloads
+export PATH=${PATH}:/home/hisakot/Downloads
 
 # android-studio
 export PATH=${PATH}:/usr/local/android-studio/bin

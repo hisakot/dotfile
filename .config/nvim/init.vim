@@ -7,8 +7,13 @@ filetype on
 python3 import sys
 
 " ===== Dein settings =====
+" Be iMproved
+if &compatible
+	set nocompatible
+endif
+
 " Set dein cache path and dein config dir
-let g:dein_cache_path = expand('~/.cache/nvim/dein/')
+let g:dein_cache_path = expand('~/.cache/dein/')
 let g:dein_config_dir = expand('~/.config/nvim/dein/')
 
 " Set dein.vim directory
@@ -41,10 +46,10 @@ if dein#check_install()
 endif
 
 " Install Python3 for nvim
-if has("nvim") && !has("python3")
-    echo 'install neovim python3'
-    call system('sudo pip install neovim')
-endif
+" if has("nvim") && !has("python3")
+"     echo 'install neovim python3'
+"     call system('sudo pip3 install neovim')
+" endif
 
 syntax on
 filetype plugin indent on
