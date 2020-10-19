@@ -9,7 +9,6 @@ packagelist=(
 )
 piplist=(
 	"matplotlib"
-	"neovim"
 	"numpy"
 	"rainbow_logging_handler"
 	"scipy"
