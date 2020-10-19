@@ -8,9 +8,9 @@ python3 import sys
 
 " ===== Dein settings =====
 " Be iMproved
-if &compatible
-	set nocompatible
-endif
+" if &compatible
+" 	set nocompatible
+" endif
 
 " Set dein cache path and dein config dir
 let g:dein_cache_path = expand('~/.cache/dein/')
@@ -41,9 +41,9 @@ if dein#load_state(g:dein_cache_path)
 endif
 
 " Install plugins
-if dein#check_install()
-    call dein#install()
-endif
+" if dein#check_install()
+"     call dein#install()
+" endif
 
 " Install Python3 for nvim
 " if has("nvim") && !has("python3")
