@@ -18,7 +18,7 @@ repo = 'roxma/vim-hug-neovim-rpc'        # neovim compatibility
 if = '!has("nvim")'
 
 [[plugins]]
-repo = 'Shougo/neosnippet.nvim'               # Snippet
+repo = 'Shougo/neosnippet.vim'               # Snippet
 depends = ['deoplete.nvim']
 
 [[plugins]]
