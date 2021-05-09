@@ -12,6 +12,8 @@ piplist=(
 	"numpy"
 	"rainbow_logging_handler"
 	"scipy"
+	"google-api-python-client"
+	"google-auth-oauthlib"
 )
 
 echo "start apt-get install"

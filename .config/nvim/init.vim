@@ -46,10 +46,10 @@ endif
  endif
 
 " Install Python3 for nvim
-" if has("nvim") && !has("python3")
-"     echo 'install neovim python3'
-"     call system('sudo pip3 install neovim')
-" endif
+if has("nvim") && !has("python3")
+    echo 'install neovim python3'
+    call system('sudo pip3 install neovim')
+endif
 
 syntax on
 filetype plugin indent on
