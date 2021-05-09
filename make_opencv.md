@@ -74,7 +74,7 @@ CC=gcc-7 CXX=g++-7 cmake -D CMAKE_BUILD_TYPE=RELEASE -D OPENCV_EXTRA_MODULES_PAT
 
  make and install
  ```
- proc
+ nproc
  >>>number
  make -j$(nproc)
 sudo make install
