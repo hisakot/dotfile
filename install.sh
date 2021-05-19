@@ -8,6 +8,7 @@ packagelist=(
 	"jpegoptim"
 )
 piplist=(
+	"jedi"
 	"matplotlib"
 	"numpy"
 	"rainbow_logging_handler"
