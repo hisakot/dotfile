@@ -37,5 +37,6 @@ repo = 'cespare/vim-toml'
 on_ft = ['toml']
 
 [[plugins]]
-repo = 'skanehira/preview-markdown.vim'  # preview markdown, Usage :PreviewMarkdown
-on_ft = ['md']                           # need to install mdr binary
+repo = 'skanehira/preview-markdown.vim'  # Usage :PreviewMarkdown
+on_ft = ['md']
+# need to install mdr binary from https://github.com/MichaelMure/mdr
