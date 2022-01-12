@@ -51,6 +51,13 @@ $ vim ~/.gitconfig -> add below
 	InsteadOf = https://github.com/
 	InsteadOf = git@github.com:
 
+# SSH
+$ sudo apt install openssh-server
+$ sudo systemctl status ssh
+$ sudo /etc/ssh/sshd_config -> add "Port portnumber" under "#Port 22"
+$ sudo systemctl restart ssh
+$ sudo systemctl restart sshd
+
 # Tex
 $ sudo apt install latexmk
 $ sudo apt install texlive-lang-japanese
