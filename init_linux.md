@@ -47,9 +47,8 @@ $ ssh-keygen -t rsa -> 3 times enter or file name, 2 enter
 https://github.com/settings/ssh add ssh key(id_rsa.pubの中身)
 $ ssh -T git@github.com -> check connection
 $ vim ~/.gitconfig -> add below
-[url "github"]
+[url "git@github.com:"]
 	InsteadOf = https://github.com/
-	InsteadOf = git@github.com:
 
 # SSH
 $ sudo apt install openssh-server
