@@ -25,7 +25,7 @@ add workspace
 # Terminal
 size -> 104x80
 font size -> Monospace Regular 13
-auto start -> command : /usr/bin/mate-terminal --geometry=110x80+960+0
+auto start -> command : /usr/bin/mate-terminal --geometry=104x60+960+0
 
 # Change directory names english
 $ Lang=C xdg-usr-dirs-gtk-update
