@@ -15,6 +15,11 @@ piplist=(
 	"scipy"
 	"google-api-python-client"
 	"google-auth-oauthlib"
+	"tqdm"
+	"opencv-python"
+	"opencv-contrib-python"
+	"tensorflow"
+	"tensorboard"
 )
 
 echo "start apt-get install"

@@ -26,6 +26,7 @@ add workspace
 size -> 104x80
 font size -> Monospace Regular 13
 auto start -> command : /usr/bin/mate-terminal --geometry=104x60+960+0
+(pip3 install rainbow-logging-handler...?)
 
 # Change directory names english
 $ Lang=C xdg-usr-dirs-gtk-update
