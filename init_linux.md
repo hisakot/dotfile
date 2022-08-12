@@ -98,6 +98,9 @@ $ sudo apt install texlive-lang-japanese
 $ sudo apt install texlive-full
 
 download jlisting.sty
+(https://ja.osdn.net/projects/mytexpert/downloads/26068/jlisting.sty.bz2/)
+
+$ bunzip2 jlisting.sty.bz2
 
 $ sudo mkdir /usr/share/texlive/texmf-dist/tex/latex/jlisting
 
