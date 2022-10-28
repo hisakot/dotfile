@@ -79,6 +79,17 @@ $ vim ~/.gitconfig -> add below
 
 	InsteadOf = https://github.com/
 
+# If neovim dein error because of python2 provider (vim -> :checkhealth)
+$ which python{,2,3} -> /usr/bin/python3
+
+$ sudo apt install -y python2
+
+$ which python{,2,3} -> /usr/bin/python3 "and" /usr/bin/python2
+
+$ sudo apt install python-pip
+
+$ python2 -m pip install --user --upgrade pynvim
+
 # SSH
 $ sudo apt install openssh-server
 
