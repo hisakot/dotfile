@@ -149,3 +149,6 @@ export PATH=${PATH}:/home/hisakot/Downloads
 # android-studio
 export PATH=${PATH}:/usr/local/android-studio/bin
 
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
