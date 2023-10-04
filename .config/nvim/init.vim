@@ -56,3 +56,13 @@ filetype plugin indent on
 
 " ===== Common settings =====
 execute 'source' g:dein_config_dir . 'common.vim'
+
+" ===== provider =====
+" let g:loaded_python_provider = 0
+" let g:loaded_perl_provider = 0
+
+" Highlight special words as TODO
+augroup DebugHighlight
+    au!
+    autocmd BufEnter * match TODO /\<HACK\|REVIEW\|OPTIMIZE\|CHANGED\|WARNING\>/
+augroup END
