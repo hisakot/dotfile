@@ -40,7 +40,7 @@ font size -> Monospace Regular 13
 auto start -> command : /usr/bin/mate-terminal --geometry=104x60+960+0
 
 # Change directory names english
-$ Lang=C xdg-usr-dirs-gtk-update
+$ LANG=C xdg-usr-dirs-gtk-update
 
 # Git and dotfile
 $ sudo apt install python3-pip
@@ -78,6 +78,13 @@ $ vim ~/.gitconfig -> add below
 [url "git@github.com:"]
 
 	InsteadOf = https://github.com/
+
+# Neovim latest vertsion
+$ curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+
+$ chmod u+x nvim.appimage
+
+$ ./nvim.appimage
 
 # If neovim dein error because of python2 provider (vim -> :checkhealth)
 $ which python{,2,3} -> /usr/bin/python3
