@@ -52,17 +52,17 @@ repo = 'ujihisa/neco-look'               # 英単語補完
 [[plugins]]
 repo = 'Yggdroot/indentLine'             # indent line
 
-[[plugins]]
-repo = 'plasticboy/vim-markdown'         # preview markdown
+# [[plugins]]
+# repo = 'plasticboy/vim-markdown'         # preview markdown
 
-[[plugins]]
-repo = 'previm/previm'                   # preview markdown
-hook_add = '''
-    autocmd BufRead,BufNewFile *.md  set filetype=markdown
-    nnoremap <silent> <C-p> :PrevimOpen<CR>
-    let g:vim_markdown_folding_disabled=1
-    let g:previm_enable_realtime=1
-'''
+# [[plugins]]
+# repo = 'previm/previm'                   # preview markdown
+# hook_add = '''
+#     autocmd BufRead,BufNewFile *.md  set filetype=markdown
+#     nnoremap <silent> <C-p> :PrevimOpen<CR>
+#     let g:vim_markdown_folding_disabled=1
+#     let g:previm_enable_realtime=1
+# '''
 
 [[plugins]]
 repo = 'tyru/open-browser.vim'           # preview markdown
