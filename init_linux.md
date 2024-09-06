@@ -75,7 +75,7 @@ $ ssh -T git@github.com -> check connection
 
 $ vim ~/.gitconfig -> add below
 
-[url "git@github.com:"]
+    [url "git@github.com:"]
 
 	InsteadOf = https://github.com/
 
