@@ -1,11 +1,13 @@
 syntax enable
-colorscheme ron
+colorscheme evening
 nnoremap <F7> gt
 inoremap <F7> <ESC>gt
 nnoremap <F6> gT
 inoremap <F6> <ESC>gT
 nnoremap 9 ^
 nnoremap 0 $
+
+set termguicolors
 
 " backspace delete
 set backspace=indent,eol,start
