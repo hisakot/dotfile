@@ -40,7 +40,7 @@ font size -> Monospace Regular 13
 auto start -> command : /usr/bin/mate-terminal --geometry=104x60+960+0
 
 # Change directory names english
-$ LANG=C xdg-usr-dirs-gtk-update
+$ LANG=C xdg-user-dirs-gtk-update
 
 # Git and dotfile
 $ sudo apt install python3-pip
@@ -122,9 +122,9 @@ $ bunzip2 jlisting.sty.bz2
 
 $ sudo mkdir /usr/share/texlive/texmf-dist/tex/latex/jlisting
 
-$ cp jlisting.sty /usr/share/texlive/texmf-dist/tex/latex/jlisting/
+$ sudo cp jlisting.sty /usr/share/texlive/texmf-dist/tex/latex/jlisting/
 
-$ cd usr/share/texlive/texmf-dist/tex/latex/jlisting
+$ cd /usr/share/texlive/texmf-dist/tex/latex/jlisting
 
 $ sudo mktexlsr
 
