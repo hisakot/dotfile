@@ -97,6 +97,9 @@ $ sudo apt install python-pip
 
 $ python2 -m pip install --user --upgrade pynvim
 
+# If neovim deoplete error because of jedi module is not installed
+$ pip3 install jedi
+
 # SSH
 $ sudo apt install openssh-server
 
