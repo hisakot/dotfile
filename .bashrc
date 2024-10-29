@@ -153,6 +153,8 @@ export PATH=${PATH}:/usr/local/android-studio/bin
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+export PYENV_VIRTUALENV_DISABLE_PROMOT=1
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
