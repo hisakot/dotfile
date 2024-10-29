@@ -45,7 +45,7 @@ $ LANG=C xdg-user-dirs-gtk-update
 # Git and dotfile
 $ sudo apt install python3-pip
 
-$ sudo apt get install neovim
+$ sudo apt-get install neovim
 
 $ sudo apt install git
 
