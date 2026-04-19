@@ -124,7 +124,7 @@ if [ -x /usr/bin/mint-fortune ]; then
      /usr/bin/mint-fortune
 fi
 alias vim=nvim
-alias vim=~/nvim.appimage
+# alias vim=~/nvim.appimage
 
 XDG_CONFIG_HOME=/home/hisakot/.config/nvim/init.vim
 
@@ -171,3 +171,9 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+
+# xrandr
+# main
+xrandr --output DP-1 --mode 1920x1080 --pos 0x0
+# sub
+xrandr --output HDMI-0 --mode 400x1280 --rotate right --pos 1920x0
