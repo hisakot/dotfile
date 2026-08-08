@@ -97,6 +97,11 @@ $ sudo apt install python-pip
 
 $ python2 -m pip install --user --upgrade pynvim
 
+# If neovim jedi error when opening python file
+$ apt policy python3-jedi -> Insalled: (none) Candidate ... -> install OK(if not, cannot install)
+
+$ sudo apt install python3-jedi
+
 # If neovim deoplete error because of jedi module is not installed
 $ pip3 install jedi
 
