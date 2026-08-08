@@ -21,11 +21,32 @@ let s:dein_dir = g:dein_cache_path . 'repos/github.com/Shougo/dein.vim'
 
 " Clone dein.vim if it does not exist
 if !isdirectory(s:dein_dir)
-    execute '!git clone https://github.com/Shougo/dein.vim' s:dein_dir
+	" Create parent directory
+	call mkdir(fnamemodify(s:dein_dir, ':h'), 'p')
+
+	"Clone dein.vim
+	let s:cmd = 'GIT_CONFIG_GLOBAL=/dev/null git clone https://github.com/Shougo/dein.vim ' . shellescape(s:dein_dir)
+	let s:result = system(s:cmd)
+
+	" Check clone result
+	if v:shell_error != 0
+		echohl ErrorMsg
+		echomsg 'Failed to install dein.vim'
+		echomsg s:result
+		echohl None
+		finish
+	endif
 endif
 
 " Add dein.vim to runtime path
-execute 'set runtimepath+=' . fnamemodify(s:dein_dir, ':p')
+if isdirectory(s:dein_dir)
+	execute 'set runtimepath^=' . fnameescape(s:dein_dir)
+else
+	echohl ErrorMsg
+	echomsg 'dein.vim directory not found: ' . s:dein_dir
+	echohl None
+	finish
+endif
 
 " Load plugins
 if dein#load_state(g:dein_cache_path)
