@@ -176,4 +176,4 @@ unset __conda_setup
 # main
 xrandr --output DP-1 --mode 1920x1080 --pos 0x0
 # sub
-xrandr --output HDMI-0 --mode 400x1280 --rotate right --pos 1920x0
+xrandr --output HDMI-0 --mode 400x1280 --rotate right --pos 1920x680
