@@ -43,6 +43,7 @@ auto start -> command : /usr/bin/mate-terminal --geometry=104x60+960+0
 $ LANG=C xdg-user-dirs-gtk-update
 
 # Git and dotfile
+```
 $ sudo apt install python3-pip
 
 $ sudo apt-get install neovim
@@ -78,6 +79,7 @@ $ vim ~/.gitconfig -> add below
     [url "git@github.com:"]
 
 	InsteadOf = https://github.com/
+```
 
 # Neovim latest vertsion
 $ curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
@@ -104,6 +106,19 @@ $ sudo apt install python3-jedi
 
 # If neovim deoplete error because of jedi module is not installed
 $ pip3 install jedi
+
+# pyenv
+$ sudo apt install build-essential libssl-dev zlib1g-dev \
+    libbz2-dev libreadline-dev libsqlite3-dev curl \
+    libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
+
+$ git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+
+$ cd ~/.pyenv && src/configure && make -C src
+
+$ sudo reboot
+
+$ pyenv --version
 
 # SSH
 $ sudo apt install openssh-server
